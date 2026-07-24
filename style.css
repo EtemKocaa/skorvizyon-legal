@@ -1,0 +1,60 @@
+:root{
+  --bg:#0d1420; --panel:#141d2c; --line:#233149; --text:#e8eef7;
+  --muted:#9aa9c0; --accent:#3b82f6; --accent2:#22d3ee;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.65; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent2); text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px; margin:0 auto; padding:0 22px}
+
+/* ---- header / nav ---- */
+header{border-bottom:1px solid var(--line); background:rgba(13,20,32,.92); position:sticky; top:0; z-index:10}
+.nav{display:flex; align-items:center; justify-content:space-between; gap:18px; padding:14px 0; flex-wrap:wrap}
+.brand{display:flex; align-items:center; gap:10px; font-weight:700; font-size:1.05rem; color:var(--text)}
+.brand:hover{text-decoration:none}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:flex;align-items:center;justify-content:center;font-size:15px}
+.nav nav{display:flex; gap:20px; flex-wrap:wrap}
+.nav nav a{color:var(--muted); font-size:.94rem}
+.nav nav a:hover,.nav nav a.on{color:var(--text); text-decoration:none}
+
+/* ---- hero ---- */
+.hero{padding:64px 0 40px; border-bottom:1px solid var(--line)}
+.hero h1{font-size:2.4rem; line-height:1.2; margin:0 0 14px}
+.hero p{font-size:1.1rem; color:var(--muted); max-width:640px; margin:0 0 24px}
+.tag{display:inline-block; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+     color:var(--accent2); border:1px solid var(--line); border-radius:999px; padding:5px 12px; margin-bottom:18px}
+
+/* ---- content ---- */
+section{padding:44px 0; border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:1.45rem; margin:0 0 8px}
+h3{font-size:1.05rem; margin:0 0 6px}
+.lead{color:var(--muted); margin:0 0 26px; max-width:680px}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px}
+.card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px}
+.card p{color:var(--muted); margin:0; font-size:.95rem}
+.ico{font-size:1.5rem; display:block; margin-bottom:10px}
+ol.steps{counter-reset:s; list-style:none; padding:0; margin:0; display:grid; gap:14px}
+ol.steps li{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px 18px 58px; position:relative}
+ol.steps li::before{counter-increment:s; content:counter(s); position:absolute; left:18px; top:18px;
+  width:26px;height:26px;border-radius:8px;background:var(--accent); color:#fff; font-size:.85rem; font-weight:700;
+  display:flex;align-items:center;justify-content:center}
+ol.steps p{color:var(--muted); margin:4px 0 0; font-size:.95rem}
+.pill{display:inline-block; background:var(--panel); border:1px solid var(--line); border-radius:999px;
+      padding:6px 14px; margin:0 8px 8px 0; font-size:.9rem; color:var(--muted)}
+
+/* ---- legal pages ---- */
+.doc{padding:44px 0; max-width:760px}
+.doc h1{font-size:1.9rem; margin:0 0 6px}
+.doc h2{font-size:1.15rem; margin:1.8em 0 .4em}
+.doc code{background:var(--panel); border:1px solid var(--line); padding:1px 6px; border-radius:5px; font-size:.9em}
+.muted{color:var(--muted); font-size:.92rem}
+
+footer{padding:30px 0 50px; color:var(--muted); font-size:.88rem}
+footer .fl{display:flex; gap:18px; flex-wrap:wrap; margin-bottom:10px}
+@media (max-width:600px){ .hero h1{font-size:1.85rem} .hero{padding:44px 0 30px} }

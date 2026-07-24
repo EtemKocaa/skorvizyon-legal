@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works — Skor Vizyon</title>
+<meta name="description" content="How the Skor Vizyon desktop application publishes a single short-form video to YouTube, Instagram, Facebook, Threads and TikTok.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="logo">⚡</span> Skor Vizyon</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html" class="on">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <span class="tag">Workflow</span>
+  <h1>From one file to five platforms</h1>
+  <p>The application is a desktop program that runs on macOS. Nothing is published automatically:
+     every post starts with the account owner selecting a video and pressing publish.</p>
+</div>
+
+<section class="wrap">
+  <h2>Publishing a video</h2>
+  <p class="lead">A normal post takes five steps.</p>
+  <ol class="steps">
+    <li><h3>Select the video</h3>
+      <p>A short-form football clip is chosen from the local disk. The app checks its aspect
+         ratio, duration and codec, and warns if a platform would reject it.</p></li>
+    <li><h3>Write the caption</h3>
+      <p>One title, one description and one set of hashtags are written. The app then adapts
+         them to each platform's character and hashtag limits.</p></li>
+    <li><h3>Choose a cover</h3>
+      <p>A frame from the video is picked as the thumbnail, or a separate image is uploaded.
+         Covers are generated in the size each platform expects.</p></li>
+    <li><h3>Pick the destinations and mode</h3>
+      <p>The connected accounts are selected. A draft mode is available, which publishes as
+         private or unlisted so a post can be checked before it goes public.</p></li>
+    <li><h3>Publish or schedule</h3>
+      <p>The post goes out immediately, or is queued for a chosen time. Each platform's result —
+         link or error — is written to a local history log.</p></li>
+  </ol>
+</section>
+
+<section class="wrap">
+  <h2>How each platform receives the video</h2>
+  <p class="lead">Every integration uses the platform's own official API. No unofficial
+     endpoints, scraping or browser automation is involved.</p>
+  <div class="grid">
+    <div class="card"><h3>YouTube</h3>
+      <p>Uploaded through the YouTube Data API as a Short, with the chosen thumbnail.</p></div>
+    <div class="card"><h3>Instagram &amp; Facebook</h3>
+      <p>Published as Reels through the Meta Graph API. These platforms fetch the video from a
+         temporary local address rather than from a stored copy.</p></div>
+    <div class="card"><h3>Threads</h3>
+      <p>Published as a video post through the official Threads API.</p></div>
+    <div class="card"><h3>TikTok</h3>
+      <p>Uploaded with the TikTok Content Posting API. The file is sent directly to TikTok by
+         the app, and the post is created on Skor Vizyon's own account.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Where the data lives</h2>
+  <p class="lead">The application has no backend service. Videos, captions, publish history and
+     platform access tokens are stored on the operator's own computer. Nothing is sent anywhere
+     except to the social platforms the owner has connected, and only when a publish is started.</p>
+</section>
+
+<footer class="wrap">
+  <div class="fl">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+  <div>© 2026 Skor Vizyon · Contact: <a href="mailto:etemmkocaa@gmail.com">etemmkocaa@gmail.com</a></div>
+</footer>
+
+</body>
+</html>

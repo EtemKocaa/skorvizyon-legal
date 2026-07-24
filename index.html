@@ -1,11 +1,94 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
-<title>Skor Vizyon</title>
-<style>body{font-family:-apple-system,sans-serif;max-width:600px;margin:60px auto;padding:0 20px;line-height:1.6}</style>
-</head><body>
-<h1>Skor Vizyon</h1>
-<p>Legal documents for the Skor Vizyon personal publishing app:</p>
-<ul>
-<li><a href="privacy.html">Privacy Policy</a></li>
-<li><a href="terms.html">Terms of Service</a></li>
-</ul>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skor Vizyon — Multi-Platform Video Publishing</title>
+<meta name="description" content="Skor Vizyon is a football content brand and the desktop publishing tool behind it — one place to publish short-form videos to YouTube, Instagram, Facebook, Threads and TikTok.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="logo">⚡</span> Skor Vizyon</a>
+    <nav>
+      <a href="index.html" class="on">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <span class="tag">Football content · Desktop publishing tool</span>
+  <h1>One video. Every platform.<br>Published from one place.</h1>
+  <p>Skor Vizyon is a football content brand producing short-form video — match moments,
+     analysis and highlights. This site documents the desktop application we built to publish
+     that content to our own social accounts from a single screen.</p>
+  <p><a href="how-it-works.html">See how it works →</a></p>
+</div>
+
+<section class="wrap">
+  <h2>What the application does</h2>
+  <p class="lead">Publishing the same short video by hand to five platforms means five uploads,
+     five captions and five sets of formatting rules. The application does that work in one pass.</p>
+  <div class="grid">
+    <div class="card"><span class="ico">📤</span><h3>Publish once</h3>
+      <p>Select a video, write the caption, choose the destinations. The app uploads to each
+         connected platform using that platform's official API.</p></div>
+    <div class="card"><span class="ico">✍️</span><h3>Per-platform captions</h3>
+      <p>Every platform has different character and hashtag limits. Captions are adapted
+         automatically for each one, without cutting words in half.</p></div>
+    <div class="card"><span class="ico">🖼️</span><h3>Covers &amp; formatting</h3>
+      <p>Pick a thumbnail frame or upload a custom cover. Video can be converted to a
+         vertical 9:16 format when a platform expects it.</p></div>
+    <div class="card"><span class="ico">🕒</span><h3>Scheduling</h3>
+      <p>Queue a post for a later time. A background worker publishes it at the scheduled
+         moment and reports the result.</p></div>
+    <div class="card"><span class="ico">📊</span><h3>Results in one view</h3>
+      <p>Every publish is logged with its links and status, so a single failed platform can be
+         retried without repeating the whole post.</p></div>
+    <div class="card"><span class="ico">🔒</span><h3>Local &amp; private</h3>
+      <p>The app runs on the operator's own Mac. Videos and access tokens stay on that
+         machine — there is no company server holding them.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Connected platforms</h2>
+  <p class="lead">Each integration uses the platform's official publishing API and posts only
+     to Skor Vizyon's own accounts.</p>
+  <div>
+    <span class="pill">YouTube Shorts</span>
+    <span class="pill">Instagram Reels</span>
+    <span class="pill">Facebook Reels</span>
+    <span class="pill">Threads</span>
+    <span class="pill">TikTok</span>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>How TikTok is used</h2>
+  <p class="lead">We use the TikTok Content Posting API for a single, narrow purpose: to upload
+     Skor Vizyon's own football videos to the Skor Vizyon TikTok account, started manually by the
+     account owner inside the desktop app. The application does not read, collect or publish other
+     users' content, and it is not offered to third parties.</p>
+</section>
+
+<footer class="wrap">
+  <div class="fl">
+    <a href="how-it-works.html">How It Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+  <div>© 2026 Skor Vizyon · Contact: <a href="mailto:etemmkocaa@gmail.com">etemmkocaa@gmail.com</a></div>
+</footer>
+
+</body>
+</html>
