@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How It Works — Skor Vizyon</title>
-<meta name="description" content="How the Skor Vizyon desktop application publishes a single short-form video to YouTube, Instagram, Facebook, Threads and TikTok.">
+<title>How It Works — WavePublish</title>
+<meta name="description" content="How the WavePublish desktop application publishes a single short-form video to YouTube, Instagram, Facebook, Threads and TikTok.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html"><span class="logo">⚡</span> Skor Vizyon</a>
+    <a class="brand" href="index.html"><span class="logo">⚡</span> WavePublish</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="how-it-works.html" class="on">How It Works</a>
@@ -32,10 +32,13 @@
 
 <section class="wrap">
   <h2>Publishing a video</h2>
-  <p class="lead">A normal post takes five steps.</p>
+  <p class="lead">A normal post takes six steps.</p>
   <ol class="steps">
+    <li><h3>Choose the brand</h3>
+      <p>The operator selects which of their own content brands the post belongs to. That choice
+         determines which set of connected accounts and credentials the app will use.</p></li>
     <li><h3>Select the video</h3>
-      <p>A short-form football clip is chosen from the local disk. The app checks its aspect
+      <p>A short-form clip is chosen from the local disk. The app checks its aspect
          ratio, duration and codec, and warns if a platform would reject it.</p></li>
     <li><h3>Write the caption</h3>
       <p>One title, one description and one set of hashtags are written. The app then adapts
@@ -66,8 +69,16 @@
       <p>Published as a video post through the official Threads API.</p></div>
     <div class="card"><h3>TikTok</h3>
       <p>Uploaded with the TikTok Content Posting API. The file is sent directly to TikTok by
-         the app, and the post is created on Skor Vizyon's own account.</p></div>
+         the app, and the post is created on the operator's own account.</p></div>
   </div>
+</section>
+
+<section class="wrap">
+  <h2>Keeping brands separate</h2>
+  <p class="lead">The application can be used for more than one of the operator's content brands.
+     Each brand's access tokens and settings are stored in their own separate location on disk, and
+     a publish only ever uses the credentials of the brand chosen for that post. Nothing is shared
+     between brands.</p>
 </section>
 
 <section class="wrap">
@@ -85,7 +96,7 @@
     <a href="privacy.html">Privacy Policy</a>
     <a href="terms.html">Terms of Service</a>
   </div>
-  <div>© 2026 Skor Vizyon · Contact: <a href="mailto:etemmkocaa@gmail.com">etemmkocaa@gmail.com</a></div>
+  <div>© 2026 WavePublish · Contact: <a href="mailto:etemmkocaa@gmail.com">etemmkocaa@gmail.com</a></div>
 </footer>
 
 </body>
