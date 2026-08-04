@@ -16,8 +16,7 @@ header{border-bottom:1px solid var(--line); background:rgba(13,20,32,.92); posit
 .nav{display:flex; align-items:center; justify-content:space-between; gap:18px; padding:14px 0; flex-wrap:wrap}
 .brand{display:flex; align-items:center; gap:10px; font-weight:700; font-size:1.05rem; color:var(--text)}
 .brand:hover{text-decoration:none}
-.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));
-      display:flex;align-items:center;justify-content:center;font-size:15px}
+.logo{width:30px;height:30px;border-radius:8px;display:block;object-fit:contain}
 .nav nav{display:flex; gap:20px; flex-wrap:wrap}
 .nav nav a{color:var(--muted); font-size:.94rem}
 .nav nav a:hover,.nav nav a.on{color:var(--text); text-decoration:none}
